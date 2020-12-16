@@ -1,0 +1,43 @@
+@mixin mediumScreen() {
+  @include mediaQueryMaxWidth(991px) {
+    @content
+  }
+}
+
+@mixin mediumMScreen() {
+  @include mediaQueryMaxWidth(1199px) {
+    @content
+  }
+}
+
+
+@mixin mobileScreen() {
+  @include mediaQueryMaxWidth(767px) {
+    @content
+  }
+}
+
+@mixin extraMobileScreen() {
+  @include mediaQueryMaxWidth(575px) {
+    @content
+  }
+}
+
+@mixin extraMobileScreenS() {
+  @include mediaQueryMaxWidth(320px) {
+    @content
+  }
+
+}
+
+@mixin mediaQueryMaxWidth($maxWidth) {
+  @media screen and (max-width: #{$maxWidth}) {
+    @content;
+  }
+}
+
+//@mixin mediaQueryMinWidth($minWidth) {
+//  @media screen and (min-width: #{$minWidth}){
+//    @content;
+//  }
+//}

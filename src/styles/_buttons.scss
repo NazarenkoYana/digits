@@ -1,0 +1,55 @@
+
+.mybtn {
+  cursor: pointer;
+  padding: 7px 20px;
+  border-radius: 100px;
+  background: transparent;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  border-color: transparent;
+    &:focus{
+      outline: none;
+    }
+}
+
+.mybtn.mybtn_header {
+  border: 1px solid #3751FF;
+  color: #FFFFFF;
+  background-color: #3751FF;
+}
+
+.mybtn.mybtn_main_blue {
+  color: #FFFFFF;
+  background-color: #3751FF;
+  padding: 12px 38px;
+}
+
+.mybtn.mybtn_main_white {
+  color: #455880;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 12px 40px;
+}
+
+.mybtn.mybtn_browser {
+  background-color: #3751FF;
+  line-height: 100%;
+  color: #FFFFFF;
+  padding: 17px 38px;
+}
+
+.mybtn.mybtn_w_img {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 110%;
+  text-align: center;
+  color: #455880;
+  padding: 17px 38px;
+  background: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 100px;
+}
+
+

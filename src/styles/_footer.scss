@@ -1,0 +1,182 @@
+@import "mixins";
+
+footer {
+  padding-top: 124px;
+  padding-bottom: 100px;
+  background: #FFFFFF;
+
+  @include mediumMScreen() {
+    padding: 40px;
+  }
+  @include mobileScreen() {
+    padding: 50px;
+  }
+  @include extraMobileScreen() {
+    padding: 20px;
+  }
+  @include extraMobileScreenS() {
+    padding: 0;
+    margin-bottom: 15px;
+  }
+
+
+  .logo_footer {
+    margin-bottom: 35px;
+    margin-top: 35px;
+
+    @include mediumScreen() {
+      text-align: center;
+    }
+    @include mobileScreen() {
+      text-align: center;
+    }
+    @include extraMobileScreen() {
+      text-align: center;
+    }
+  }
+
+  p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 145%;
+    color: #455880;
+    margin-right: 20px;
+
+    @include mediumScreen() {
+      text-align: center;
+    }
+    @include mobileScreen() {
+      text-align: center;
+    }
+    @include extraMobileScreen() {
+      text-align: center;
+    }
+  }
+
+  .footer_name {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 125%;
+    color: #1E266D;
+    margin-bottom: 25px;
+    margin-top: 35px;
+
+    @include mediumScreen() {
+      text-align: center;
+    }
+    @include mobileScreen() {
+      text-align: center;
+    }
+    @include extraMobileScreen() {
+      text-align: center;
+    }
+  }
+
+  .logo_footer_s {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 0;
+    align-items: center;
+  }
+
+  .menu_footer {
+    display: flex;
+
+    @include mediumScreen() {
+      justify-content: center;
+      text-align: center;
+    }
+    @include mobileScreen() {
+      justify-content: center;
+      text-align: center;
+    }
+    @include extraMobileScreen() {
+      justify-content: center;
+      text-align: center;
+    }
+
+    ul {
+      padding: 0;
+
+      li {
+        list-style-type: none;
+
+        a {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 225%;
+          color: #455880;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .footer_end {
+    margin-top: 77px;
+    padding-top: 50px;
+    border-top: 1px solid rgba(135, 146, 161, 0.08);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @include mobileScreen() {
+      flex-direction: column;
+      text-align: center;
+    }
+    @include extraMobileScreen() {
+      flex-direction: column;
+      text-align: center;
+    }
+    @include extraMobileScreenS() {
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    //@include mediumMScreen(){
+    //  flex-direction: column;
+    //  text-align: center;
+    //}
+
+
+    .footer_end_left {
+
+      a {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 27px;
+        color: rgba(69, 88, 128, 0.5);
+        text-decoration: none;
+      }
+    }
+
+    .footer_end_right {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+
+      a {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 27px;
+        text-align: right;
+        color: #455880;
+        text-decoration: none;
+      }
+
+    }
+  }
+}

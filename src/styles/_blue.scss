@@ -1,0 +1,58 @@
+@import "mixins";
+
+.section_blue {
+  background: #3751FF;
+  margin-top: 150px;
+  padding: 88px 0 115px 0;
+
+  @include mobileScreen() {
+    padding: 50px 50px 50px 50px;
+  }
+
+  .section_blue_name {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+    color: #FFFFFF;
+
+    @include extraMobileScreen() {
+      font-size: 30px;
+      text-align: center;
+    }
+    @include mobileScreen(){
+      font-size: 30px;
+      text-align: center;
+    }
+  }
+
+  .center_b {
+    display: flex;
+    justify-content: center;
+    margin: 27px 0;
+
+  }
+
+
+  p.b {
+    margin: 0;
+    text-align: right;
+
+    @include extraMobileScreen() {
+      text-align: center;
+    }
+
+    a {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 125%;
+      color: #DFE0EB;
+      text-decoration: none;
+    }
+
+  }
+
+}

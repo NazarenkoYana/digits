@@ -1,0 +1,45 @@
+.section_browser {
+  background-color: #FFF9EA;
+  padding-top: 139px;
+  min-height: 1000px;
+  background-image: url("../images/Graphic_browser.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: bottom;
+  background-origin: border-box;
+
+  h1 {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    color: #1E266D;
+    margin: 0;
+
+    @include extraMobileScreen() {
+      font-size: 30px;
+    }
+  }
+
+  p {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 150%;
+    text-align: center;
+    color: #455880;
+  }
+
+  .center_b {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+  }
+
+}
